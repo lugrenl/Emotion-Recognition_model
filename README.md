@@ -52,6 +52,8 @@ In this part I've prepared two notebooks for using single model neural network a
 - [Camera_streaming_single_model.ipynb](https://github.com/lugrenl/Emotion-Recognition_model/blob/main/Camera_streaming_single_model.ipynb)
 - [Camera_streaming_committee.ipynb](https://github.com/lugrenl/Emotion-Recognition_model/blob/main/Camera_streaming_committee.ipynb)
 
+<code>![facedetector](https://miro.medium.com/max/1400/1*rSOC2rIKZ3NSkE3j1MetdQ.png)</code>
+
 Models checkpoints are able here:
 - [VGGFace](https://drive.google.com/file/d/1acXcVS88PCVbrCJjiidrC4B8SYLc2hPP/view?usp=sharing)
 - [Xception](https://drive.google.com/file/d/1DnnfiZ6qViP3nXUgVy4i5H8HYiiDCE41/view?usp=sharing)
