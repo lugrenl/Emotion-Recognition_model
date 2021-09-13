@@ -21,7 +21,7 @@ Before starting do these steps:
      /test_kaggle
        <unstructured images>
   ```
-  Also you can do this inside EDA.ipynb
+  Also you can do this inside [EDA.ipynb](https://github.com/lugrenl/Emotion-Recognition_model/blob/main/EDA.ipynb)
 - Download openCV model files for face detector:
   - [model](https://github.com/opencv/opencv_3rdparty/raw/dnn_samples_face_detector_20170830/res10_300x300_ssd_iter_140000.caffemodel) and rename as `opencv_face_detector.caffemodel`
   - [config](https://github.com/opencv/opencv/blob/master/samples/dnn/face_detector/opencv_face_detector.pbtxt) file and place both files to `./Data` folder.
