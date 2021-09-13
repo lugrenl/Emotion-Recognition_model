@@ -42,7 +42,21 @@ and train them on two datasets.
 Best private score on single model was reached by BiT-M r50x1 on full-image dataset and amounted 0.56840.
 After that I've made the committee with four model which was headed by VGGFace.
 The decision was made by a majority vote. If the votes were divided, the decision was made by VGGFace.
-This technique allowed the model to achieve 0.58600 on private dataset. 
+This technique allowed the model to achieve 0.58600 on a private dataset. 
+## Valence-Arousal model
+This notebook [Valence_Arousal_model.ipynb](https://github.com/lugrenl/Emotion-Recognition_model/blob/main/Valence_Arousal_model.ipynb) has an overview and a training nature because the original dataset didn't have coordinate values in the Valence-Arousal system. I have to make them manualy depends on algorithm.
+VGG was chosen as the two headed training model. It has two Dense output layers for for predicting each coordinate in Valense-Arousal.
+This model reached 0.42280 on a private dataset.
+## Web-camera implementation
+In this part I've prepared two notebooks for using single model neural network and the committe for predicting emotions from web-camera flow:
+- [Camera_streaming_single_model.ipynb](https://github.com/lugrenl/Emotion-Recognition_model/blob/main/Camera_streaming_single_model.ipynb)
+- [Camera_streaming_committee.ipynb](https://github.com/lugrenl/Emotion-Recognition_model/blob/main/Camera_streaming_committee.ipynb)
+
+Models checkpoints are able here:
+- [VGGFace](https://drive.google.com/file/d/1acXcVS88PCVbrCJjiidrC4B8SYLc2hPP/view?usp=sharing)
+- [Xception](https://drive.google.com/file/d/1DnnfiZ6qViP3nXUgVy4i5H8HYiiDCE41/view?usp=sharing)
+- [BiT-M r50x1](https://drive.google.com/file/d/1N3iPOKqPHvS9doA0jxNcqeWUXRYF_XXQ/view?usp=sharing)
+- [Efficientnet B1](https://drive.google.com/file/d/1hBZ9-f91Akf9sj57T6gl7UcamL5LCFDQ/view?usp=sharing)
 
     
 
