@@ -40,7 +40,7 @@ After that I've built four models:
 and train them on two datasets.
 
 Best private score on single model was reached by BiT-M r50x1 on full-image dataset and amounted 0.56840.
-After that I've made the committee with four model which was headed by VGGFace.
+After that I've made the committee with four models which was headed by VGGFace.
 The decision was made by a majority vote. If the votes were divided, the decision was made by VGGFace.
 This technique allowed the model to achieve 0.58600 on a private dataset. 
 ## Valence-Arousal model
