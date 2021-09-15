@@ -44,11 +44,11 @@ After that, I've made the committee with four models which were headed by VGGFac
 The decision was made by a majority vote. If the votes were divided, the decision was made by VGGFace.
 This technique allowed the model to achieve 0.58600 on a private dataset. 
 ## Valence-Arousal model
-This notebook [Valence_Arousal_model.ipynb](https://github.com/lugrenl/Emotion-Recognition_model/blob/main/Valence_Arousal_model.ipynb) has an overview and a training nature because the original dataset didn't have coordinate values in the Valence-Arousal system. I have to make them manualy depends on algorithm.
-VGG was chosen as the two headed training model. It has two Dense output layers for for predicting each coordinate in Valense-Arousal.
+This notebook [Valence_Arousal_model.ipynb](https://github.com/lugrenl/Emotion-Recognition_model/blob/main/Valence_Arousal_model.ipynb) has an overview and a training nature because the original dataset didn't have coordinate values in the Valence-Arousal system. I have to make them manually depending on the algorithm.
+VGG was chosen as the two-headed training model. It has two Dense output layers for predicting each coordinate in Valence-Arousal.
 This model reached 0.42280 on a private dataset.
 ## Web-camera implementation
-In this part I've prepared two notebooks for using single model neural network and the committe for predicting emotions from web-camera flow:
+In this part I've prepared two notebooks for using a single model neural network and the committee for predicting emotions from the web-camera flow:
 - [Camera_streaming_single_model.ipynb](https://github.com/lugrenl/Emotion-Recognition_model/blob/main/Camera_streaming_single_model.ipynb)
 - [Camera_streaming_committee.ipynb](https://github.com/lugrenl/Emotion-Recognition_model/blob/main/Camera_streaming_committee.ipynb)
 
