@@ -1,7 +1,7 @@
 # Experiments with convolutional neural networks for emotion recognition
 ## Introduction
-This work based on [Kaggle competition](https://www.kaggle.com/c/skillbox-computer-vision-project/overview).
-I've tried to use various strategy in data preparation and model training for reaching a maximum score on a private dataset.
+This work is based on [Kaggle competition](https://www.kaggle.com/c/skillbox-computer-vision-project/overview).
+I've tried to use various strategies in data preparation and model training for reaching a maximum score on a private dataset.
 ## Versions of used libraries
 Python 3.8.5
 - tensorflow 2.4.1
@@ -21,12 +21,12 @@ Before starting do these steps:
      /test_kaggle
        <unstructured images>
   ```
-  Also you can do this inside [EDA.ipynb](https://github.com/lugrenl/Emotion-Recognition_model/blob/main/EDA.ipynb)
+  Also, you can do this inside [EDA.ipynb](https://github.com/lugrenl/Emotion-Recognition_model/blob/main/EDA.ipynb)
 - Download openCV model files for face detector:
   - [model](https://github.com/opencv/opencv_3rdparty/raw/dnn_samples_face_detector_20170830/res10_300x300_ssd_iter_140000.caffemodel) and rename as `opencv_face_detector.caffemodel`
   - [config](https://github.com/opencv/opencv/blob/master/samples/dnn/face_detector/opencv_face_detector.pbtxt) file and place both files to `./Data` folder.
 ## Data analysis
-Data analysis was placed in [EDA.ipynb](https://github.com/lugrenl/Emotion-Recognition_model/blob/main/EDA.ipynb). In this part I explore the data. Get structure and data statistics. I've cleaned data from outliers and prepeared two datasets: 
+Data analysis was placed in [EDA.ipynb](https://github.com/lugrenl/Emotion-Recognition_model/blob/main/EDA.ipynb). In this, part I explore the data as well as getting structure and data statistics. I've cleaned data from outliers and prepared two datasets: 
 - a full-image dataset 
 - a dataset with cropped faces from source image.
 ## Models training
@@ -39,8 +39,8 @@ After that I've built four models:
 
 and train them on two datasets.
 
-Best private score on single model was reached by BiT-M r50x1 on full-image dataset and amounted 0.56840.
-After that I've made the committee with four models which was headed by VGGFace.
+The best private score on a single model was reached by BiT-M r50x1 on full-image dataset and amounted to 0.56840.
+After that, I've made the committee with four models which were headed by VGGFace.
 The decision was made by a majority vote. If the votes were divided, the decision was made by VGGFace.
 This technique allowed the model to achieve 0.58600 on a private dataset. 
 ## Valence-Arousal model
